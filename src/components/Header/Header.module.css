@@ -1,6 +1,5 @@
 /*#4D5258*/
 .header {
   display: flex;
-  height: 70px;
   justify-content: space-between;
 }
