@@ -1,3 +1,23 @@
+import styles from "./Home.module.css";
+import welcomeImage from "../../assets/images/welcome.jpg";
+
 export function Home() {
-  return <div>Home</div>;
+  return (
+    <section className={styles.welcomeContainer}>
+      <div className={styles.welcomeMessage}>
+        <h1>
+          Welcome to Amina's <span className="violet">blog</span>
+        </h1>
+        <p>
+          Hi there! My name is <span className="violet">Amina Assouane</span>,
+          and this is my blog: written by a web developer, for other developers.
+          Feel free to read all about my insights, experiences, tips and
+          reflections!
+        </p>
+      </div>
+      <div className={styles.welcomeImage}>
+        <img src={welcomeImage} alt="Welcome image" />
+      </div>
+    </section>
+  );
 }

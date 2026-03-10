@@ -1,0 +1,49 @@
+.welcomeContainer {
+  display: flex;
+  min-height: 80vh;
+}
+
+.welcomeMessage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.welcomeMessage h1 {
+  font-size: 3.5em;
+  margin: 1rem 0;
+
+  opacity: 0;
+  animation: appear 1s forwards;
+  transform: translateY(100px);
+}
+
+.welcomeMessage p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 500ms;
+}
+
+.welcomeImage {
+  width: 50%;
+  border-left: 1px solid #4d5258;
+}
+
+.welcomeImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@keyframes appear {
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
