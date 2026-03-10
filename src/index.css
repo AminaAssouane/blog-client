@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,6 +15,17 @@ body {
   height: auto;
   background-color: #282429;
   color: #e6e7e6;
+
+  font-family: Raleway;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .violet {
