@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  height: auto;
+  background-color: #282429;
+  color: #e6e7e6;
+}
+
+.violet {
+  color: #955eb4;
+}
