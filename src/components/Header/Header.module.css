@@ -1,5 +1,13 @@
-/*#4D5258*/
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-bottom: 1px solid #4d5258;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.5rem;
 }

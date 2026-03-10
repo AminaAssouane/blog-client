@@ -7,14 +7,15 @@ export function Header() {
       <h1>
         Amina's <span className="violet">blog</span>
       </h1>
-      <nav>
+      <nav className={styles.navBar}>
         <Link to="/">
-          <button>Home</button>
+          <a>Home</a>
         </Link>
         <Link to="about">
-          <button>About me</button>
+          <a>About me</a>
         </Link>
-        <button>Admin Dashboard</button>
+
+        <button className="admin">Admin Dashboard</button>
       </nav>
     </header>
   );
