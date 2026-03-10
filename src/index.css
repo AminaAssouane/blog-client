@@ -6,7 +6,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 1fr 5fr 1fr;
   height: auto;
   background-color: #282429;
   color: #e6e7e6;
