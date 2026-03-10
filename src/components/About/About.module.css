@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  padding: 50px 200px;
+  padding: 50px 250px;
 }
 
 .container h1 {
@@ -18,10 +18,30 @@
   display: block;
 }
 
+.content p {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: appear 1s forwards;
+}
+
+.content p:nth-child(2) {
+  animation-delay: 100ms;
+}
+.content p:nth-child(3) {
+  animation-delay: 400ms;
+}
+.content p:nth-child(4) {
+  animation-delay: 700ms;
+}
+.content p:nth-child(5) {
+  animation-delay: 1100ms;
+}
+
 .avatar {
   shape-outside: circle(50%);
   float: left;
   margin-right: 30px;
+  margin-bottom: 10px;
 }
 
 .avatar img {
@@ -30,6 +50,13 @@
   transform: rotateY(90deg);
   animation: spin 2s ease forwards;
   animation-delay: 600ms;
+}
+
+@keyframes appear {
+  100% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes spin {

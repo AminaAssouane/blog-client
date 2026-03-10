@@ -35,6 +35,12 @@ export function About() {
           me, as I was constantly stressed about whether I'm going in the right
           direction with my studies or not.
         </p>
+        <p style={{ marginTop: "20px" }}>
+          Now it's 2025, and the web development community is growing larger and
+          larger. Maybe you're a part of it! This blog is dedicated to other
+          aspiring developers with the same goal. I want to share my journey and
+          experiences to inspire and motivate people on the same path.
+        </p>
       </div>
     </main>
   );
