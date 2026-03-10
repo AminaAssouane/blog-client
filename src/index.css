@@ -10,13 +10,15 @@
 }
 
 body {
-  display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
-  height: auto;
   background-color: #282429;
   color: #e6e7e6;
-
   font-family: Raleway;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 a {
