@@ -12,12 +12,8 @@ export function Header() {
         </div>
       </h1>
       <nav className={styles.navRight}>
-        <Link to="/">
-          <a>Home</a>
-        </Link>
-        <Link to="about">
-          <a>About me</a>
-        </Link>
+        <Link to="/">Home</Link>
+        <Link to="about">About me</Link>
 
         <button className="admin">Admin Dashboard</button>
       </nav>
