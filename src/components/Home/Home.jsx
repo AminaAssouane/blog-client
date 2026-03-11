@@ -52,8 +52,14 @@ export function Home() {
           >
             <h2>{post.title}</h2>
             <p>{post.content}</p>
-            <p>Published: {post.published ? "Yes" : "No"}</p>
-            <small>Author ID: {post.userId}</small>
+            <h4>Comments:</h4>
+            <ul>
+              {post.comments.map((comment) => (
+                <li key={comment.id}>
+                  {comment.username}: {comment.content}
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </section>
