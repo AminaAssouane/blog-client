@@ -35,7 +35,7 @@ function Card({ post }) {
   return (
     <article className={styles.preview}>
       <div className={styles.cover}>
-        <img src={welcomeImage} alt="Cover image" />
+        <img src={post.image} alt="Cover image" />
       </div>
       <div className={styles.content}>
         <h3>{post.title}</h3>

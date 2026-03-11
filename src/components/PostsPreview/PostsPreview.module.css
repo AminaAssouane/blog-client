@@ -49,3 +49,11 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
+
+.content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
