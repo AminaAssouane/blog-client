@@ -1,6 +1,5 @@
 import styles from "./PostsPreview.module.css";
 import { useState, useEffect } from "react";
-import welcomeImage from "../../assets/images/welcome.jpg";
 
 export function PostsPreview() {
   const [posts, setPosts] = useState([]);
@@ -32,13 +31,21 @@ export function PostsPreview() {
 }
 
 function Card({ post }) {
+  const date = new Date(post.createdAt);
+  const formattedDate = date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+
   return (
     <article className={styles.preview}>
       <div className={styles.cover}>
-        <img src={post.image} alt="Cover image" />
+        <img src={post.image} alt={post.title} />
       </div>
       <div className={styles.content}>
         <h3>{post.title}</h3>
+        <div className={styles.date}>{formattedDate}</div>
         <p>{post.content}</p>
       </div>
     </article>
