@@ -1,4 +1,4 @@
-//import styles from "./PostsPreview.module.css";
+import styles from "./PostsPreview.module.css";
 import { useState, useEffect } from "react";
 
 export function PostsPreview() {
@@ -24,22 +24,22 @@ export function PostsPreview() {
   return (
     <>
       {posts.map((post) => (
-        <div
-          key={post.id}
-          style={{ borderBottom: "1px solid #ccc", marginBottom: "1rem" }}
-        >
-          <h2>{post.title}</h2>
-          <p>{post.content}</p>
-          <h4>Comments:</h4>
-          <ul>
-            {post.comments.map((comment) => (
-              <li key={comment.id}>
-                {comment.username}: {comment.content}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Card key={post.id} post={post} />
       ))}
     </>
+  );
+}
+
+function Card({ post }) {
+  return (
+    <article className={styles.preview}>
+      <div className={styles.cover}>
+        {/*<img src={post.cover_url} alt="Cover image" />*/}
+      </div>
+      <div className={styles.content}>
+        <h3>{post.title}</h3>
+        <p>{post.content}</p>
+      </div>
+    </article>
   );
 }

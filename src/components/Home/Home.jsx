@@ -11,8 +11,11 @@ export function Home() {
             Welcome to Amina's <span className="violet">blog</span>
           </h1>
           <p>
-            Hi there! My name is <span className="violet">Amina Assouane</span>,
-            and this is my blog: written by a web developer, for other
+            Hi there! My name is{" "}
+            <span className="violet">
+              <b>Amina Assouane</b>
+            </span>
+            , and this is my blog: written by a web developer, for other
             developers. Feel free to read all about my insights, experiences,
             tips and reflections!
           </p>
