@@ -25,11 +25,27 @@ export function Post() {
 
   if (loading) return <p>Loading...</p>;
 
+  const date = new Date(post.createdAt);
+  const formattedDate = date.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+
   return (
-    <main>
-      <h1>{post.title}</h1>
-      <img src={post.image} alt={post.title} />
-      <p>{post.content}</p>
+    <main className={styles.postPageMain}>
+      <article className={styles.post}>
+        <div className={styles.image}>
+          <img src={post.image} alt={post.title} />
+        </div>
+        <div className={styles.info}>
+          <h1>{post.title}</h1>
+          <div className={styles.date}>{formattedDate}</div>
+        </div>
+        <div className={styles.content}>
+          <p>{post.content}</p>
+        </div>
+      </article>
     </main>
   );
 }

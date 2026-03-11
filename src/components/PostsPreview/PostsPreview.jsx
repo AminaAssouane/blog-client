@@ -22,6 +22,8 @@ export function PostsPreview() {
     fetchPosts();
   }, []);
 
+  if (loading) return <p>Loading...</p>;
+
   return (
     <div className={styles.postsPreviewContainer}>
       {posts.map((post) => (
