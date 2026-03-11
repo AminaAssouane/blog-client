@@ -1,5 +1,6 @@
 import styles from "./PostsPreview.module.css";
 import { useState, useEffect } from "react";
+import welcomeImage from "../../assets/images/welcome.jpg";
 
 export function PostsPreview() {
   const [posts, setPosts] = useState([]);
@@ -22,11 +23,11 @@ export function PostsPreview() {
   }, []);
 
   return (
-    <>
+    <div className={styles.postsPreviewContainer}>
       {posts.map((post) => (
         <Card key={post.id} post={post} />
       ))}
-    </>
+    </div>
   );
 }
 
@@ -34,7 +35,7 @@ function Card({ post }) {
   return (
     <article className={styles.preview}>
       <div className={styles.cover}>
-        {/*<img src={post.cover_url} alt="Cover image" />*/}
+        <img src={welcomeImage} alt="Cover image" />
       </div>
       <div className={styles.content}>
         <h3>{post.title}</h3>
