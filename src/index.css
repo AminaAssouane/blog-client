@@ -27,10 +27,6 @@ a {
   color: #e6e7e6;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 button {
   all: unset;
   background-color: #955eb4;

@@ -1,5 +1,6 @@
 import styles from "./PostsPreview.module.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 export function PostsPreview() {
   const [posts, setPosts] = useState([]);
@@ -39,15 +40,17 @@ function Card({ post }) {
   });
 
   return (
-    <article className={styles.preview}>
-      <div className={styles.cover}>
-        <img src={post.image} alt={post.title} />
-      </div>
-      <div className={styles.content}>
-        <h3>{post.title}</h3>
-        <div className={styles.date}>{formattedDate}</div>
-        <p>{post.content}</p>
-      </div>
-    </article>
+    <Link to={`/posts/${post.id}`}>
+      <article className={styles.preview}>
+        <div className={styles.cover}>
+          <img src={post.image} alt={post.title} />
+        </div>
+        <div className={styles.content}>
+          <h3>{post.title}</h3>
+          <div className={styles.date}>{formattedDate}</div>
+          <p>{post.content}</p>
+        </div>
+      </article>
+    </Link>
   );
 }

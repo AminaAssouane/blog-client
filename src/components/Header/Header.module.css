@@ -27,6 +27,10 @@
   height: 40px;
 }
 
+.navRight a:hover {
+  text-decoration: underline;
+}
+
 /* Animations */
 .navRight a,
 .navRight button {

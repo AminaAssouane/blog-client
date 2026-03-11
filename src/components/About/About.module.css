@@ -20,6 +20,7 @@
 
 .content p {
   opacity: 0;
+  text-align: justify;
   transform: translateY(100px);
   animation: appear 1s forwards;
 }

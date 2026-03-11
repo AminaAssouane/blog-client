@@ -5,6 +5,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { Home } from "./components/Home/Home.jsx";
 import { About } from "./components/About/About.jsx";
+import { Post } from "./components/Post/Post.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       { path: "about", element: <About /> },
+      { path: "posts/:postId", element: <Post /> },
     ],
   },
 ]);
