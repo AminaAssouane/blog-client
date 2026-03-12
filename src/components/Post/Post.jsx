@@ -1,6 +1,7 @@
 import styles from "./Post.module.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { Comments } from "../Comments/Comments.jsx";
 
 export function Post() {
   const { postId } = useParams();
@@ -46,6 +47,7 @@ export function Post() {
           <p>{post.content}</p>
         </div>
       </article>
+      <Comments post={post} />
     </main>
   );
 }
