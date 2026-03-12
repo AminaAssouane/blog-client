@@ -1,0 +1,144 @@
+.commentsWrapper {
+  width: 100%;
+  border-top: 1px solid #4d5258;
+}
+
+/* COMMENT CREATOR */
+.commentCreatorWrapper {
+  border-bottom: 1px solid #4d5258;
+}
+
+.commentCreator {
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.commentCreator h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.commentCreator form {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentCreator form label {
+  margin-top: 0.5rem;
+}
+
+.commentCreator form input {
+  width: 30%;
+  padding: 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+
+  background-color: inherit;
+  border: 1px solid #4d5258;
+  border-radius: 3px;
+  transition: 0.2s ease-in;
+
+  color: #e6e7e6;
+  font-size: 1rem;
+}
+
+.commentCreator form textarea {
+  flex: 1;
+  width: 100%;
+  overflow: scroll-y;
+  resize: none;
+  padding: 1rem;
+  margin: 0.5rem 0 0.5rem 0;
+
+  background-color: inherit;
+  border: 1px solid #4d5258;
+  border-radius: 8px;
+  transition: 0.2s ease-in;
+
+  color: #e6e7e6;
+  font-size: 1rem;
+}
+
+.commentCreator form textarea:focus {
+  outline: none;
+  box-shadow: #955eb4 0px 0px 0px 1px;
+  border-color: #955eb4;
+}
+
+.commentCreator form button {
+  padding: 0.5rem 1rem;
+  align-self: flex-end;
+}
+
+/* COMMENTS */
+
+.commentsContainer {
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.commentsContainer h3 {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.comments > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.comment {
+  padding: 1rem;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  border: 1px solid #4d5258;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.commentInfo {
+  display: flex;
+  align-items: center;
+}
+
+.commentInfo span {
+  width: fit-content;
+}
+
+.commentInfo span:first-child {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #955eb4;
+}
+
+.commentInfo span:last-child {
+  color: #98d8b8;
+  background-color: rgba(129, 230, 217, 0.16);
+
+  display: inline-block;
+  width: max-content;
+  padding: 4px 12px;
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.commentContent p {
+  margin: 0;
+}

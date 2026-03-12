@@ -67,16 +67,14 @@ export function Comments({ post }) {
           <div className={styles.commentCreator}>
             <h3>Leave a comment</h3>
             <form onSubmit={handleSubmit}>
-              <label>
-                Username :
-                <input
-                  required
-                  type="text"
-                  name="username"
-                  id="username"
-                  onChange={handleUsernameChange}
-                />
-              </label>
+              <label>Username </label>
+              <input
+                required
+                type="text"
+                name="username"
+                id="username"
+                onChange={handleUsernameChange}
+              />
 
               <label htmlFor="comment">Message</label>
               <textarea
