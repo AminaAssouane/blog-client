@@ -2,6 +2,7 @@ import styles from "./Post.module.css";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Comments } from "../Comments/Comments.jsx";
+import { ClipLoader } from "react-spinners";
 
 export function Post() {
   const { postId } = useParams();
@@ -24,7 +25,7 @@ export function Post() {
     fetchPost();
   }, [postId]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <ClipLoader color="#955EB4" />;
 
   const date = new Date(post.createdAt);
   const formattedDate = date.toLocaleDateString("en-GB", {

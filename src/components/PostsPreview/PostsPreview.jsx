@@ -1,6 +1,7 @@
 import styles from "./PostsPreview.module.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { ClipLoader } from "react-spinners";
 
 export function PostsPreview() {
   const [posts, setPosts] = useState([]);
@@ -22,7 +23,7 @@ export function PostsPreview() {
     fetchPosts();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <ClipLoader color="#955EB4" />;
 
   return (
     <div className={styles.postsPreviewContainer}>
