@@ -44,7 +44,7 @@ export function Post() {
           <div className={styles.date}>{formattedDate}</div>
         </div>
         <div className={styles.content}>
-          <p>{post.content}</p>
+          <div dangerouslySetInnerHTML={{ __html: post.content }} />{" "}
         </div>
       </article>
       <Comments post={post} />

@@ -41,6 +41,13 @@ function Card({ post }) {
     year: "numeric",
   });
 
+  function getPreviewText(html, maxLength = 120) {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = html;
+    const text = tempDiv.textContent || tempDiv.innerText || "";
+    return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
+  }
+
   return (
     <Link to={`/posts/${post.id}`}>
       <article className={styles.preview}>
@@ -50,7 +57,7 @@ function Card({ post }) {
         <div className={styles.content}>
           <h3>{post.title}</h3>
           <div className={styles.date}>{formattedDate}</div>
-          <p>{post.content}</p>
+          <p>{getPreviewText(post.content)}</p>{" "}
         </div>
       </article>
     </Link>
