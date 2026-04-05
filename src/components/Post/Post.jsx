@@ -27,8 +27,13 @@ export function Post() {
     fetchPost();
   }, [postId]);
 
-  if (loading) return <ClipLoader color="#955EB4" className="spinner" />;
-
+  if (loading) {
+    return (
+      <div className="spinner">
+        <ClipLoader color="#955EB4" />
+      </div>
+    );
+  }
   const date = new Date(post.createdAt);
   const formattedDate = date.toLocaleDateString("en-GB", {
     day: "numeric",

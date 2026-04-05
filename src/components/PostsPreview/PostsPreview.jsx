@@ -23,8 +23,13 @@ export function PostsPreview() {
     fetchPosts();
   }, []);
 
-  if (loading) return <ClipLoader color="#955EB4" className="spinner" />;
-
+  if (loading) {
+    return (
+      <div className="spinner">
+        <ClipLoader color="#955EB4" />
+      </div>
+    );
+  }
   return (
     <div className={styles.postsPreviewContainer}>
       {posts.map((post) => (
