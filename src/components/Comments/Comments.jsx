@@ -10,7 +10,7 @@ export function Comments({ post }) {
     async function fetchComments() {
       try {
         const response = await fetch(
-          `http://localhost:3000/posts/${post.id}/comments`,
+          `${import.meta.env.VITE_API_URL}/posts/${post.id}/comments`,
         );
         if (!response.ok) throw Error;
         const data = await response.json();
@@ -36,7 +36,7 @@ export function Comments({ post }) {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/posts/${post.id}/comments`,
+        `${import.meta.env.VITE_API_URL}/posts/${post.id}/comments`,
         {
           method: "POST",
           headers: {

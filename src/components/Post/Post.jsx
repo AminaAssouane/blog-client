@@ -12,7 +12,9 @@ export function Post() {
   useEffect(() => {
     async function fetchPost() {
       try {
-        const response = await fetch(`http://localhost:3000/posts/${postId}`);
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/posts/${postId}`,
+        );
         if (!response.ok) throw Error;
         const data = await response.json();
         setPost(data);
