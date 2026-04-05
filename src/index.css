@@ -30,7 +30,7 @@ a {
 
 button {
   all: unset;
-  background-color: #955eb4;
+  background-color: #bb3296;
   color: #e6e7e6;
   border: none;
   border-radius: 5px;
@@ -41,9 +41,10 @@ button {
 }
 
 button:hover {
-  background-color: #7a4d95;
+  background-color: #bb0e8d;
 }
 
 .violet {
-  color: #955eb4;
+  color: #bb3296;
+  /* color: #955eb4; */
 }

@@ -8,7 +8,7 @@ export function Header() {
       <h1 className={styles.navLeft}>
         <img src={logo} alt="logo" className={styles.logo} />
         <div>
-          Amina's <span className="violet">blog</span>
+          Dev<span className="violet">Minds</span>
         </div>
       </h1>
       <nav className={styles.navRight}>

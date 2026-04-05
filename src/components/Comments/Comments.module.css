@@ -61,8 +61,8 @@
 
 .commentCreator form textarea:focus {
   outline: none;
-  box-shadow: #955eb4 0px 0px 0px 1px;
-  border-color: #955eb4;
+  box-shadow: #bb3296 0px 0px 0px 1px;
+  border-color: #bb3296;
 }
 
 .commentCreator form button {
@@ -121,7 +121,7 @@
 .commentInfo span:first-child {
   margin-right: 0.5rem;
   font-size: 1.2rem;
-  color: #955eb4;
+  color: #bb3296;
 }
 
 .commentInfo span:last-child {

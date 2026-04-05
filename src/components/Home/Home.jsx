@@ -8,7 +8,7 @@ export function Home() {
       <section className={styles.welcomeContainer}>
         <div className={styles.welcomeMessage}>
           <h1>
-            Welcome to Amina's <span className="violet">blog</span>
+            Welcome to Dev<span className="violet">Minds</span>
           </h1>
           <p>
             Hi there! My name is{" "}
