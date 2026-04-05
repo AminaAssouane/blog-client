@@ -66,3 +66,23 @@ article.post .content p {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 600px) {
+  article.post h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  article.post .content {
+    width: 80%;
+  }
+
+  article.post .image {
+    width: 80%;
+  }
+
+  article.post .info {
+    margin-top: -5rem;
+    width: 80%;
+  }
+}

@@ -142,3 +142,17 @@
 .commentContent p {
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .commentCreator {
+    width: 80%;
+  }
+
+  .commentsContainer {
+    width: 80%;
+  }
+
+  .commentCreator form input {
+    width: 60%;
+  }
+}

@@ -58,3 +58,22 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 600px) {
+  .welcomeImage {
+    display: none;
+  }
+
+  .welcomeMessage {
+    width: 100%;
+  }
+
+  .welcomeMessage h1,
+  .welcomeMessage p {
+    text-align: center;
+  }
+
+  .postsContainer {
+    margin: 0.7rem;
+  }
+}

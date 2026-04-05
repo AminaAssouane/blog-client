@@ -15,7 +15,7 @@ export function Header() {
         <Link to="/">Home</Link>
         <Link to="about">About me</Link>
 
-        <button className="admin">Admin Dashboard</button>
+        <button className={styles.admin}>Admin Dashboard</button>
       </nav>
     </header>
   );

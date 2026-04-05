@@ -68,3 +68,13 @@
     transform: rotateY(0deg);
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: 50px;
+  }
+
+  .avatar img {
+    height: 200px;
+  }
+}

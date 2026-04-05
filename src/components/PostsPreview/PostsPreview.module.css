@@ -24,7 +24,7 @@
 }
 
 .preview:hover {
-  border-color: #955eb4;
+  border-color: #bb3296;
 }
 
 .cover img {
@@ -74,4 +74,10 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .postsPreviewContainer {
+    width: 80%;
+  }
 }
