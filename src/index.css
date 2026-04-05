@@ -47,3 +47,9 @@ button:hover {
 .violet {
   color: #bb3296;
 }
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
